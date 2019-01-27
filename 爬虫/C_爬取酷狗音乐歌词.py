@@ -20,11 +20,11 @@ def dow_lyc(singer_id):
 
     hash_singer_date1_list = hash_singer_date_str.split('|')    # 按照指定分隔符分割字符串
     # print(hash_singer_date1_list, end='\n\n')
-    print('歌曲ID个数为：' + str(len(song_id_list)), end='\n\n')
+    print('歌曲ID个数为：' + str(len(song_id_list)))
     with open('C:\\Users\\LIYANG\\Desktop\\date.txt', 'w')as f:
 
         for n in range(1, len(hash_singer_date1_list), 2):
-            print('\n第' + str(n//2+1) + '首歌', end='\n')
+            print('\n第' + str(n//2+1) + '首歌')
             f.write('第' + str(n//2+1) + '首歌' + '\n')
             if(n == 1):
                 print(hash_singer_date1_list[n-1].split('"')[0])
